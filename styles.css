@@ -1,0 +1,278 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 500px;
+}
+
+.video-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: #333; */
+    color: white;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.video-bg {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.welcome {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.welcome-message {
+    font-size: 25px;
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    top: 60%;
+}
+
+.login-button {
+    position: absolute;
+    top: 71%;
+    background-color: red;
+    color: white;
+    padding: 15px 55px;
+    border-radius: 5px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.login-button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* STYLES FOR LOGIN PAGE */
+.login {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/bitcoin\ background\ image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /* min-width: 200px; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-width: 200px;
+    margin: auto;
+}
+
+.login-form {
+    background-color: rgba(41, 28, 224, 0.4);
+    padding: 50px;
+    color: white; 
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.login-form label {
+    margin-bottom: 3px;
+    font-weight: 900;
+}
+
+.login-form input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.login-form button {
+    background-color: red;
+    padding: 15px 55px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.login button a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    color: white;
+    padding: 15px 66px;
+    width: 100%;
+    
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+.dashboard {
+    background-color: #081739;
+    color: white;
+    max-width: 500px;
+    margin: auto;
+}
+
+.logo {
+    color: rgb(43, 43, 5);
+    text-align: center;
+    /* background-color: rgb(131, 130, 130); */
+    width: 60%;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.logo a {
+    color: rgb(43, 43, 5);
+    text-align: center;
+    text-decoration: none;
+    /* background-color: rgb(131, 130, 130); */
+    width: 60%;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.greeting {
+    color: rgb(199, 184, 231);
+    margin: 0 0 -20px 27px;
+}
+
+.current-balance {
+    background-color: #0c2d74;
+    color: rgb(199, 184, 231);;
+    width: 90%;
+    font-size: 22px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.balance {
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.currency {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.currency-amount {
+    font-size: 16px;
+    color: yellow;
+}
+
+.info {
+    color: white;
+    margin-top: 5px;
+}
+
+.withdrawable-balance {
+    background-color: #0c2d74;
+    color: rgb(199, 184, 231);
+    width: 90%;
+    font-size: 22px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.action-btn {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+.click {
+    background-color: green;
+    color: rgb(199, 184, 231);
+    /* width: fit-content; */
+    margin: 2px;
+    padding: 10px 21px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.withdraw-btc {
+    background-color: rgb(5, 61, 5);
+}
+
+.buy-btc {
+    background-color: rgb(83, 83, 7);
+}
+
+.trade-btc {
+    background-color: rgb(107, 7, 7);
+}
+
+.markets {
+    margin: 40px 0 5px 30px;
+    color: rgb(199, 184, 231);
+}
+
+.crypto-market {
+    background-color: #0c2d74;
+    color: rgb(199, 184, 231);
+    width: 90%;
+    font-size: 22px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+table {
+    background-color: rgb(197, 180, 231);
+    width: 90%;
+    margin: auto;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+td img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+footer {
+    color: rgb(197, 180, 231);
+    text-align: center;
+    font-size: 14px;
+}
+
+
